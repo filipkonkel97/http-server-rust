@@ -1,4 +1,4 @@
-pub use request::Method;
+pub use method::Method;
 pub use request::Request;
 
 pub mod method;
