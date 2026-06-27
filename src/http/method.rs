@@ -16,15 +16,15 @@ impl FromStr for Method {
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
         match s {
-            "GET" => Ok(self::GET),
-            "DELETE" => Ok(self::DELETE),
-            "POST" => Ok(self::POST),
-            "PUT" => Ok(self::PUT),
-            "HEAD" => Ok(self::HEAD),
-            "CONNECT" => Ok(self::CONNECT),
-            "OPTIONS" => Ok(self::OPTIONS),
-            "TRACE" => Ok(self::TRACE),
-            "PATCH" => Ok(self::PATCH),
+            "GET" => Ok(Self::GET),
+            "DELETE" => Ok(Self::DELETE),
+            "POST" => Ok(Self::POST),
+            "PUT" => Ok(Self::PUT),
+            "HEAD" => Ok(Self::HEAD),
+            "CONNECT" => Ok(Self::CONNECT),
+            "OPTIONS" => Ok(Self::OPTIONS),
+            "TRACE" => Ok(Self::TRACE),
+            "PATCH" => Ok(Self::PATCH),
             _ => Err(MethodError),
         }
     }
